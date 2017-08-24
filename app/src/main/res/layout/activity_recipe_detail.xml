@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Brian Jackson
+     bj1412@att.com
+     8/7/2017
+     Android Developer Nanodegree
+     Project 3: Baking App
+
+     File:  activity_recipe_detail.xml
+     -Displays the RecipeDetailsFragment.
+     -Layout used on devices with screen width less than 600dp.
+
+-->
+
+<fragment
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recipe_details_fragment"
+    android:name="com.example.android.baking.fragments.RecipeDetailsFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+

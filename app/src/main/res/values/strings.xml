@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     Brian Jackson
+     bj1412@att.com
+     8/5/2017
+     Android Developer Nanodegree
+     Project 3: Baking App
+
+     File:  strings.xml
+     Provides text strings for the application.
+-->
+
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+
+    <!--Used in Action Bar, and in AndroidManifest to tell the device the name of this app.-->
+    <string name="app_name">Baking Time</string>
+
+    <!--Displayed in action bar for activities displaying recipe details. -->
+    <string name="detail_name">Recipe Details</string>
+
+    <!--Displayed in action bar for Step activity in single pane mode. -->
+    <string name="step_detail_name">Step Details</string>
+
+    <!--Error message that is displayed if no recipes were returned from server call. -->
+    <string name="error_message">
+        An error has occurred. Please try again later.
+    </string>
+
+    <string name="ingredients_title">
+        Ingredients
+    </string>
+
+    <string name="ingredient_error_message">
+        An error has occurred fetching the ingredients. Please try again later.
+    </string>
+
+    <string name="step_title">
+        Step
+    </string>
+
+    <string name="instruction_title">Please choose a recipe:</string>
+
+</resources>

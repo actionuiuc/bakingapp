@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Brian Jackson
+     bj1412@att.com
+     8/5/2017
+     Android Developer Nanodegree
+     Project 3: Baking App
+
+     File:  colors.xml
+     Color values defined in XML.
+-->
+
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Background color used in view displaying recipe title at top of screen -->
+    <color name="titleBack">#2dc7c9</color>
+
+    <!-- Background color used for widget recipe buttons -->
+    <color name="buttonColor">#e5e5e5</color>
+
+    <!-- Line Color -->
+    <color name="divider">#d3d3d3</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="cardcolor">#f1e8dc</color>
+
+    <color name="actionbarcolor">#ee8253</color>
+
+</resources>

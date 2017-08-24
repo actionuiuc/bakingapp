@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Brian Jackson
+     bj1412@att.com
+     8/5/2017
+     Android Developer Nanodegree
+     Project 3: Baking App
+
+     File:  bools.xml (sw600dp-land)
+     -Bool values defined in XML.
+     -Used to identify device as a tablet in landscape mode.
+-->
+
+<resources>
+    <bool name="tablet_land">true</bool>
+</resources>

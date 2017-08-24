@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     Brian Jackson
+     bj1412@att.com
+     8/5/2017
+     Android Developer Nanodegree
+     Project 3: Baking App
+
+     File:  integers.xml
+     -Provides integers used for the application in various settings and text.
+     -Layout used on devices with screen width of 600dp or greater.
+-->
+
+<resources>
+    <!-- Number of columns in Gridview for MainActivity -->
+    <item name="grid_cols" type="integer">2</item>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     Brian Jackson
+     bj1412@att.com
+     8/5/2017
+     Android Developer Nanodegree
+     Project 3: Baking App
+
+     File:  recipe_list_item.xml
+     -RelativeLayout containing views to display each recipe title as a button for the WidgetConfigActivity.
+     -This RelativeLayout will be inflated in the activity_configure layout in the LinearLayout recipe_llist.
+-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <Button xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recipe_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="recipe_button"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:background="@color/buttonColor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+
+        />
+
+</RelativeLayout>

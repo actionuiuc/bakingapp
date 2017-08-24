@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     Brian Jackson
+     bj1412@att.com
+     8/7/2017
+     Android Developer Nanodegree
+     Project 3: Baking App
+
+     File:  activity_detail.xml
+     -RecipeDetailsFragment displays multiple views containing the recipe information for a chosen recipe.
+     -Views include recipe ingredients and list of steps with short description.
+
+-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/detail_recipe_title"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/titleBack"
+            android:fontFamily="sans-serif-light"
+            android:gravity="bottom"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+<!--        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scrollViewDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/detail_recipe_title"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            android:paddingBottom="10dp">-->
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nest_view"
+        android:scrollbars="none">
+
+            //added to create single child for Scrollview
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:descendantFocusability="blocksDescendants"
+                >
+
+                 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                     <RelativeLayout
+                         xmlns:android="http://schemas.android.com/apk/res/android"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         >
+
+                        <!-- layout_height must be wrap_content here for scrollview to work -->
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/subtitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_alignParentBottom="true"
+                            >
+
+                            <TextView
+                                android:id="@+id/tv_ingredient_header"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-bold"
+                                android:text="@string/ingredients_title"
+                                android:textSize="22sp"
+                                android:textStyle="bold"
+                                android:visibility="gone"
+                                android:layout_alignParentLeft="true"/>
+
+                            <TextView
+                                android:id="@+id/serving_size"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-bold"
+                                android:padding="10dp"
+                                android:text="serving size"
+                                android:textSize="16sp"
+                                android:textStyle="italic"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                     <ImageView
+                         android:id="@+id/recipe_thumb"
+                         android:layout_width="110dp"
+                         android:layout_height="110dp"
+                         android:layout_toRightOf="@id/subtitle"
+                         android:layout_alignParentRight="true" />
+
+                     </RelativeLayout>
+
+                 </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_error_message_ingredient"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="16dp"
+                                android:text="@string/ingredient_error_message"
+                                android:textSize="11sp"
+                                android:textStyle="italic"
+                                android:visibility="gone" />
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:id="@+id/ingredient_list"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="8dp"
+                                android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:id="@+id/recipe_line"
+                    android:src="@drawable/recipe_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_steps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+
+            </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+        <!--/ScrollView-->
+    </LinearLayout>

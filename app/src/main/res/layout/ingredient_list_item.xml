@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     Brian Jackson
+     bj1412@att.com
+     7/14/2017
+     Android Developer Nanodegree
+     Project 3: Baking App
+
+     File:  ingredient_list_item.xml
+     -RelativeLayout containing views to display the data for each ingredient in a recipe.
+     -This RelativeLayout will be inflated in both the activity_detail and baking_widget_provider layouts.
+-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ingredient_quantity"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="ingredient_quantity"
+        android:textSize="15sp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+
+        />
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ingredient_measure"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="ingredient_measure"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/ingredient_quantity"
+        />
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ingredient_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ingredient_name"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/ingredient_measure"
+        />
+
+</RelativeLayout>

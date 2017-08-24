@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Brian Jackson
+     bj1412@att.com
+     8/5/2017
+     Android Developer Nanodegree
+     Project 3: Baking App
+
+     File:  bools.xml
+     -Bool values defined in XML.
+     -Used to identify device as a phone.
+-->
+
+    <resources>
+        <bool name="tablet_land">false</bool>
+    </resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Brian Jackson
+     bj1412@att.com
+     8/7/2017
+     Android Developer Nanodegree
+     Project 3: Baking App
+
+     File:  activity_recipe_detail.xml (sw600dp-land)
+     -Displays the RecipeDetailsFragment and StepDetailsFragment in two-pane mode .
+     -Layout used on devices with screen width of 600dp or greater AND in landscape orientation. (all other screen configs use
+      single-pane mode)
+
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    tools:context="com.example.android.baking.ui.RecipeDetailActivity">
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recipe_details_fragment"
+        android:name="com.example.android.baking.fragments.RecipeDetailsFragment"
+        android:layout_width="400dp"
+        android:layout_height="match_parent" />
+
+    <!-- A small divider -->
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/step_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/step_details_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     Brian Jackson
+     bj1412@att.com
+     8/7/2017
+     Android Developer Nanodegree
+     Project 3: Baking App
+
+     File:  activity_configure.xml
+     -Used to display recipe choices for the WidgetConfigActivity.
+     -Recipe buttons will be programmatically added to the Linear Layout recipe_llist.
+
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.WidgetConfigActivity">
+
+
+    <TextView
+        android:id="@+id/instructionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-bold"
+        android:padding="10dp"
+        android:text="@string/instruction_title"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"
+        android:textStyle="bold"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/recipe_llist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instructionTitle"
+        android:orientation="vertical"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/widget_error_message_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/error_message"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Brian Jackson
+     bj1412@att.com
+     8/7/2017
+     Android Developer Nanodegree
+     Project 3: Baking App
+
+     File:  recipecard_list_item.xml
+     -ImageView and TextView used to display recipes in the RecyclerView grid layout in the MainActivity.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <!--This ImageView holds the movie poster for one particular movie-->
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:id="@+id/recipe_image"
+        android:padding="10dp"
+        />
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recipe_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="30sp"
+        android:text="recipe_title"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/recipe_image"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+
+        />
+
+</LinearLayout>
